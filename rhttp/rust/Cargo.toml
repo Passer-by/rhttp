@@ -14,7 +14,7 @@ tokio = { version = "1.43.0", features = ["full"] }
 tokio-util = "0.7.12"
 
 [dependencies.reqwest]
-version = "0.12.12"
+version = "0.12.15"
 default-features = false
 features = [
     "charset",
