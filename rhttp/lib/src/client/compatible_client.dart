@@ -64,6 +64,7 @@ class RhttpCompatibleClient with BaseClient {
       );
 
       final responseHeaderMap = response.headerMap;
+      responseHeaderMap['httpVersion'] = response.version.name;
 
       return StreamedResponse(
         response.body,
